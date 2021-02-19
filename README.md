@@ -1,4 +1,4 @@
 # JavaScript-Projects
 challenges for javascript beginners 
 
-Im just improving my javascript skills
+Tip Calculator: https://gifted-swartz-798a0d.netlify.app/
