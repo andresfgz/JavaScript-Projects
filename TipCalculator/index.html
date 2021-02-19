@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Tip calculador</title>
+</head>
+<body>
+   <section class="main-section-container">
+       <div class="tip-calculator-container">
+            <div class="tip-container">
+                <h1 class="tip-title">tip calculator</h1>
+            </div>
+
+            <div class="error-container hiden" id="error-cont">
+                <p class="red " id="cantidad"></p>
+                <p class="red " id="usuarios"></p>
+                <p class="red " id="servicio"></p>
+            </div>
+
+            <div class="form-container">
+                <div class="main-form">
+                    <form id="message-form">
+                        <p class="bill-title">How Much Was Your Bill ?</p>
+                        <input type="number" class="bill-input" id="price" name="price" >
+
+                        <p class="people-title">How Many People Sharing The Bill ?</p>
+                        <input type="number" class="people-input" id="people" name="people">
+
+                        <select name="select" class="select-items" id='select-form'>
+                            <option value="0" selected>Choose...</option>
+                            <option value="20">Great - 20%</option>
+                            <option value="10" >Good - 10%</option>
+                            <option value="2">Bad - 2%</option>
+                        </select>
+                        <div class="btn-container">
+                            <button class="btn-calcultate">Calculate</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="loader hiden" id="loader">Loading...</div>
+            <div class="results-container" id="tt">
+                <p class="results">Total Propina $ <span id="result-prop"></span></p>
+                <p class="results">Total a pagar $ <span id="result-total"></span></p>
+                <p class="results">Pago por persona $ <span id="result-person"></span></p>
+            </div>
+       </div>
+   </section>
+      <script src="/js/index.js"></script>
+</body>
+</html>

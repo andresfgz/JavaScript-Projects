@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-color: #929cc8;
+    background-image: linear-gradient(104deg, #929cc8 8%, #4b86b3 27%, #a95ddc 66%, #bd78dc 100%);
+}
+.main-section-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip-calculator-container {
+    background-color: white;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.tip-container {
+    background-color: rgb(112, 126, 245);
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.tip-title {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.error-container {
+    background-color: rgb(226, 165, 165);
+    border: 1px solid rgb(240, 193, 193);
+    border-radius: 10px;
+    width: 80%;
+    padding: 15px 0;
+    text-align: center;
+    margin-left: 60px;
+}
+.hiden {
+    display: none;
+    color: rgb(255, 27, 27);
+    font-size: 22px;
+}
+
+.show {
+    color: rgb(255, 27, 27);
+    font-size: 22px;
+    display: block;
+    
+
+}
+
+.form-container {
+   width: 100%;
+   
+}
+
+.main-form {
+    margin: 15px 0 30px 60px;
+    
+}
+
+.bill-title {
+    font-size: 28px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.bill-input {
+    width: 90%;
+    height: 45px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.people-title {
+    font-size: 28px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.people-input {
+    margin-bottom: 25px;
+    width: 90%;
+    height: 45px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.select-items {
+    font-size: 25px;
+    display: block;
+    width: 90%;
+    height: 45px;
+    padding-left: 10px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-calcultate{
+    width: 60%;
+    height: 65px;
+    margin-top: 30px;
+    border: 1px solid rgb(112, 126, 245);
+    background-color: rgb(135, 147, 250);
+    color: white;
+    font-size: 26px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.results-container {
+    margin-left: 65px;
+    margin-bottom: 30px;
+}
+.results {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+
+
+/* ANIMATION*/
+
+.loader,
+.loader:before,
+.loader:after {
+  background: rgb(112, 126, 245);
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 2em;
+  height: 4em;
+}
+.loader {
+  color: rgb(112, 126, 245);
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 18px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
